@@ -52,10 +52,6 @@ This shrinkage is not random:
 - This pattern is consistent with **omitted-variable bias** in the FF3 model,
   where momentum-related returns are incorrectly absorbed into the intercept.
 
-Rather than testing differences in alphas directly—which would require joint
-covariance estimates across models—the statistical evidence is provided by the
-significance of the momentum factor itself.
-
 ### Momentum Factor Significance
 In the Carhart regressions, the momentum factor loadings are frequently
 statistically significant, indicating that momentum captures systematic
@@ -66,13 +62,21 @@ improved model specification rather than overfitting noise.
 
 ### R² Changes
 The inclusion of an additional factor mechanically increases in-sample \(R^2\),
-so the observed increases in \(R^2\) are **not interpreted as formal statistical
-evidence**.
+so the observed increases in \(R^2\) are not interpreted as formal statistical
+evidence.
 
-Instead, \( \Delta R^2 \) is reported as a diagnostic indicating that momentum
-contributes meaningfully to explaining return variation across portfolios.
+\( \Delta R^2 \) indicates that momentum contributes meaningfully to explaining 
+return variation across portfolios.
 
 ---
+
+## Figures
+
+### Alpha: FF3 vs Carhart
+![Alpha scatter](../figures/alpha_ff3_vs_carhart.png)
+
+### \(\Delta R^2\) by portfolio
+![Delta R2](../figures/delta_r2_by_portfolio.png)
 
 ## Interpretation
 The results are consistent with the core Carhart (1997) finding:
@@ -86,7 +90,7 @@ The results are consistent with the core Carhart (1997) finding:
 ---
 
 ## Conclusion
-Adding the momentum factor improves the specification of the asset pricing model
+Adding the momentum factor improves the fit of the asset pricing model
 for the 25 Size–B/M portfolios. While changes in \(R^2\) are mechanical, the
 behavior of alphas and the significance of momentum loadings provide strong
 evidence that momentum captures an important component of expected returns not
