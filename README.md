@@ -44,15 +44,15 @@ All regressions are estimated as time-series regressions for each portfolio usin
 ---
 
 ## Repository Structure
-.
-├── src/ # Data pipelines, regressions, and plotting scripts
-├── notebooks/ # Exploratory analysis and sanity checks
-├── reports/ # Regression outputs and written interpretation
-├── figures/ # Generated plots
-├── data/
-│ ├── raw/ # Downloaded raw data (ignored by git)
-│ └── processed/# Processed datasets (ignored by git)
-└── README.md
+    .
+    ├── src/ # Data pipelines, regressions, and plotting scripts
+    ├── notebooks/ # Exploratory analysis and sanity checks
+    ├── reports/ # Regression outputs and written interpretation
+    ├── figures/ # Generated plots
+    ├── data/
+    │ ├── raw/ # Downloaded raw data (ignored by git)
+    │ └── processed/# Processed datasets (ignored by git)
+    └── README.md
 
 ---
 
